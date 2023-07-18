@@ -2,7 +2,6 @@
  * External dependencies
  */
 import { __ } from '@wordpress/i18n';
-import PropTypes from 'prop-types';
 import { debounce } from '@woocommerce/base-utils';
 import { Placeholder } from '@wordpress/components';
 import { useBlockProps } from '@wordpress/block-editor';
@@ -12,13 +11,14 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import EditorBlock from './editor-block.js';
 import { getBlockClassName, getSortArgs } from './utils.js';
+import type { EditorContainerBlockProps } from './types';
 
 const EditorContainerBlock = ( {
 	attributes,
 	icon,
 	name,
 	noReviewsPlaceholder,
-} ) => {
+}: EditorContainerBlockProps ) => {
 	const {
 		categoryIds,
 		productId,
@@ -68,14 +68,6 @@ const EditorContainerBlock = ( {
 			/>
 		</div>
 	);
-};
-
-EditorContainerBlock.propTypes = {
-	attributes: PropTypes.object.isRequired,
-	icon: PropTypes.node.isRequired,
-	name: PropTypes.string.isRequired,
-	noReviewsPlaceholder: PropTypes.elementType.isRequired,
-	className: PropTypes.string,
 };
 
 export default EditorContainerBlock;
