@@ -168,7 +168,10 @@ Every release includes specific testing instructions for new features and bug fi
 -   [10.8.0](./1080.md)
     -   [10.8.1](./1081.md)
     -   [10.8.2](./1082.md)
-
+    -   [10.8.3](./1083.md)
+-   [10.9.0](./1090.md)
+    -   [10.9.1](./1091.md)
+    -   [10.9.2](./1092.md)
 
 <!-- FEEDBACK -->
 
